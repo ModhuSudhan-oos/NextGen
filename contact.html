@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AI Tools Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logos/logo.svg" alt="AI Tools Hub" class="h-8 mr-2">
+                <span class="text-xl font-bold text-indigo-600">AI Tools Hub</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+                <a href="tools.html" class="text-gray-700 hover:text-indigo-600 font-medium">Tools</a>
+                <a href="features.html" class="text-gray-700 hover:text-indigo-600 font-medium">Features</a>
+                <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
+                <a href="contact.html" class="text-indigo-600 font-medium">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Home</a>
+            <a href="tools.html" class="block py-2 text-gray-700 hover:text-indigo-600">Tools</a>
+            <a href="features.html" class="block py-2 text-gray-700 hover:text-indigo-600">Features</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-indigo-600">About</a>
+            <a href="contact.html" class="block py-2 text-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl max-w-2xl mx-auto">We'd love to hear from you! Reach out with questions, feedback, or partnership inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800">Get In Touch</h2>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="feedback">Product Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg">
+                        <i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully! We'll get back to you soon.
+                    </div>
+                    
+                    <div id="form-error" class="hidden mt-6 p-4 bg-red-100 text-red-700 rounded-lg">
+                        <i class="fas fa-exclamation-circle mr-2"></i> <span id="error-message">There was an error submitting your message. Please try again.</span>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Our Office</h4>
+                                    <p id="office-address" class="text-gray-600">123 AI Street, Tech City, TC 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Email Us</h4>
+                                    <p class="text-gray-600">
+                                        <a id="support-email" href="mailto:support@aitoolshub.com" class="hover:text-indigo-600 transition">support@aitoolshub.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Call Us</h4>
+                                    <p id="phone-number" class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Working Hours</h4>
+                                    <p id="working-hours" class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-200 hover:bg-indigo-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-indigo-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-indigo-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-indigo-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-gray-100 py-0">
+        <div class="container mx-auto px-0">
+            <iframe id="company-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155732912346!2d-73.9878449241645!3d40.74844097138961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1681234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/logos/logo-white.svg" alt="AI Tools Hub" class="h-8 mb-4">
+                    <p class="text-gray-400">Powerful AI solutions to boost your productivity and efficiency.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="tools.html" class="text-gray-400 hover:text-white transition">Tools</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <p class="text-gray-400">support@aitoolshub.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AI Tools Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
