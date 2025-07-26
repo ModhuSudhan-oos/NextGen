@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub - Powerful AI Solutions for Your Business</title>
+    <meta name="description" content="Discover powerful AI tools to streamline your workflow and boost productivity">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logos/logo.svg" alt="AI Tools Hub" class="h-8 mr-2">
+                <span class="text-xl font-bold text-indigo-600">AI Tools Hub</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+                <a href="tools.html" class="text-gray-700 hover:text-indigo-600 font-medium">Tools</a>
+                <a href="features.html" class="text-gray-700 hover:text-indigo-600 font-medium">Features</a>
+                <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Home</a>
+            <a href="tools.html" class="block py-2 text-gray-700 hover:text-indigo-600">Tools</a>
+            <a href="features.html" class="block py-2 text-gray-700 hover:text-indigo-600">Features</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-indigo-600">About</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Powerful AI Tools for Your Business</h1>
+                <p class="text-xl mb-8">Streamline your workflow with our cutting-edge AI solutions designed to boost productivity and efficiency.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tools.html" class="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                        Explore Tools
+                    </a>
+                    <a href="#features" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div id="hero-animation" class="w-full max-w-md"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured AI Tools</h2>
+            <div id="featured-tools" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tools will be loaded dynamically from firebase.js -->
+            </div>
+            <div class="text-center mt-10">
+                <a href="tools.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    View All Tools
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How Our AI Tools Help You</h2>
+            <div id="use-cases" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Use cases will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Our Users Say</h2>
+            <div id="testimonials-carousel" class="relative max-w-4xl mx-auto">
+                <div id="testimonials-container" class="overflow-hidden">
+                    <!-- Testimonials will be loaded dynamically -->
+                </div>
+                <button id="testimonial-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-4 bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                    <i class="fas fa-chevron-left text-indigo-600"></i>
+                </button>
+                <button id="testimonial-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 -mr-4 bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                    <i class="fas fa-chevron-right text-indigo-600"></i>
+                </button>
+                <div id="testimonial-dots" class="flex justify-center mt-6 space-x-2">
+                    <!-- Dots will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Subscribe to our newsletter to get the latest updates on new tools and features.</p>
+            <form id="newsletter-form" class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Your email address" required class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none">
+                <button type="submit" class="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+            <p id="newsletter-message" class="mt-4 text-sm opacity-0 transition-opacity duration-300"></p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Workflow?</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Join thousands of businesses already benefiting from our AI tools.</p>
+            <a href="tools.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                Get Started Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/logos/logo-white.svg" alt="AI Tools Hub" class="h-8 mb-4">
+                    <p class="text-gray-400">Powerful AI solutions to boost your productivity and efficiency.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="tools.html" class="text-gray-400 hover:text-white transition">Tools</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <p class="text-gray-400">support@aitoolshub.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AI Tools Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <p class="mb-4 md:mb-0">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            <button id="accept-cookies" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                Accept
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+  </html>
