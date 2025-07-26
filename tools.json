@@ -1,0 +1,167 @@
+{
+    "tool1": {
+        "id": "tool1",
+        "name": "AI Content Generator",
+        "shortDescription": "Generate high-quality content for blogs, ads, and social media in seconds.",
+        "description": "Our AI Content Generator uses advanced natural language processing to create engaging, human-like content for various purposes. Simply provide a topic or some keywords, and our tool will generate well-structured articles, product descriptions, or social media posts tailored to your needs.",
+        "icon": "assets/icons/content-generator.svg",
+        "previewImage": "assets/images/content-generator-preview.jpg",
+        "url": "https://content-generator.example.com",
+        "embedUrl": "https://content-generator.example.com/embed",
+        "categories": ["Content", "Writing", "Marketing"],
+        "features": [
+            {
+                "title": "Multiple Content Types",
+                "description": "Generate blog posts, product descriptions, social media captions, and more."
+            },
+            {
+                "title": "Tone Adjustment",
+                "description": "Choose from professional, casual, friendly, or other writing styles."
+            },
+            {
+                "title": "SEO Optimization",
+                "description": "Get content suggestions that help improve search engine rankings."
+            }
+        ],
+        "updatedAt": "2023-06-15T10:30:00Z",
+        "usage": "Free plan available, premium from $19/month",
+        "featured": true
+    },
+    "tool2": {
+        "id": "tool2",
+        "name": "Image Recognition",
+        "shortDescription": "Automatically identify objects, people, and scenes in your images.",
+        "description": "Our Image Recognition tool uses cutting-edge computer vision algorithms to analyze and tag your images. It can recognize thousands of objects, detect faces and emotions, and even describe scenes in natural language. Perfect for organizing photo libraries or adding smart features to your applications.",
+        "icon": "assets/icons/image-recognition.svg",
+        "previewImage": "assets/images/image-recognition-preview.jpg",
+        "url": "https://image-recognition.example.com",
+        "embedUrl": "https://image-recognition.example.com/embed",
+        "categories": ["Images", "Computer Vision", "Organization"],
+        "features": [
+            {
+                "title": "Object Detection",
+                "description": "Identify hundreds of common objects in your images."
+            },
+            {
+                "title": "Face Recognition",
+                "description": "Detect faces and recognize facial expressions."
+            },
+            {
+                "title": "Scene Description",
+                "description": "Get automatic captions describing the content of your images."
+            }
+        ],
+        "updatedAt": "2023-05-22T14:15:00Z",
+        "usage": "Free for basic use, API available",
+        "featured": true
+    },
+    "tool3": {
+        "id": "tool3",
+        "name": "Data Analyzer",
+        "shortDescription": "Extract insights from your data without writing code.",
+        "description": "The Data Analyzer makes it easy to explore and visualize your data. Upload spreadsheets or connect to databases, and our tool will automatically detect patterns, create visualizations, and suggest insights. No coding or statistics knowledge required.",
+        "icon": "assets/icons/data-analyzer.svg",
+        "previewImage": "assets/images/data-analyzer-preview.jpg",
+        "url": "https://data-analyzer.example.com",
+        "categories": ["Data", "Analytics", "Business"],
+        "features": [
+            {
+                "title": "Automatic Insights",
+                "description": "Get key findings and trends highlighted automatically."
+            },
+            {
+                "title": "Custom Visualizations",
+                "description": "Create charts and graphs with just a few clicks."
+            },
+            {
+                "title": "Predictive Modeling",
+                "description": "Forecast future trends based on your historical data."
+            }
+        ],
+        "updatedAt": "2023-07-01T09:45:00Z",
+        "usage": "Free trial, then $29/month",
+        "featured": true
+    },
+    "tool4": {
+        "id": "tool4",
+        "name": "Code Assistant",
+        "shortDescription": "AI-powered suggestions to help you write better code faster.",
+        "description": "Our Code Assistant understands your programming context and provides intelligent suggestions as you type. It can complete lines of code, suggest fixes for errors, and even explain complex concepts. Supports multiple programming languages and integrates with popular IDEs.",
+        "icon": "assets/icons/code-assistant.svg",
+        "previewImage": "assets/images/code-assistant-preview.jpg",
+        "url": "https://code-assistant.example.com",
+        "categories": ["Development", "Programming", "Productivity"],
+        "features": [
+            {
+                "title": "Smart Completions",
+                "description": "Get relevant code suggestions as you type."
+            },
+            {
+                "title": "Error Detection",
+                "description": "Identify potential bugs before you run your code."
+            },
+            {
+                "title": "Documentation Lookup",
+                "description": "Quickly access relevant documentation without leaving your editor."
+            }
+        ],
+        "updatedAt": "2023-06-28T16:20:00Z",
+        "usage": "Free for individuals, team plans available",
+        "featured": false
+    },
+    "tool5": {
+        "id": "tool5",
+        "name": "Voice Synthesizer",
+        "shortDescription": "Convert text to natural-sounding speech in multiple languages.",
+        "description": "Create realistic voiceovers for videos, podcasts, or accessibility features with our Voice Synthesizer. Choose from dozens of lifelike voices across multiple languages and accents. Fine-tune pronunciation, speed, and tone to get exactly the sound you need.",
+        "icon": "assets/icons/voice-synthesizer.svg",
+        "previewImage": "assets/images/voice-synthesizer-preview.jpg",
+        "url": "https://voice-synthesizer.example.com",
+        "embedUrl": "https://voice-synthesizer.example.com/embed",
+        "categories": ["Audio", "Accessibility", "Content Creation"],
+        "features": [
+            {
+                "title": "Natural Voices",
+                "description": "Choose from realistic human-like voices."
+            },
+            {
+                "title": "Emotion Control",
+                "description": "Adjust the emotional tone of the speech."
+            },
+            {
+                "title": "Batch Processing",
+                "description": "Convert large amounts of text to speech efficiently."
+            }
+        ],
+        "updatedAt": "2023-05-10T11:10:00Z",
+        "usage": "Pay-as-you-go credits",
+        "featured": false
+    },
+    "tool6": {
+        "id": "tool6",
+        "name": "Sentiment Analyzer",
+        "shortDescription": "Understand emotions and opinions in text data.",
+        "description": "Our Sentiment Analyzer examines text to determine the emotional tone and opinions expressed. Perfect for analyzing customer feedback, social media mentions, or any text data where understanding sentiment is important. Get detailed breakdowns of positive, negative, and neutral sentiment.",
+        "icon": "assets/icons/sentiment-analyzer.svg",
+        "previewImage": "assets/images/sentiment-analyzer-preview.jpg",
+        "url": "https://sentiment-analyzer.example.com",
+        "categories": ["Analytics", "Marketing", "Customer Service"],
+        "features": [
+            {
+                "title": "Emotion Detection",
+                "description": "Identify specific emotions like happiness, anger, or frustration."
+            },
+            {
+                "title": "Trend Analysis",
+                "description": "Track sentiment changes over time."
+            },
+            {
+                "title": "Custom Models",
+                "description": "Train the model on your specific domain for better accuracy."
+            }
+        ],
+        "updatedAt": "2023-07-05T13:25:00Z",
+        "usage": "Free for small datasets, enterprise plans available",
+        "featured": true
+    }
+}
